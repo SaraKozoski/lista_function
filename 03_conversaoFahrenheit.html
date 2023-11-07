@@ -7,14 +7,13 @@
     */
 
     //Entrada
-    let temperatura = Number(prompt(`Insira a temperatura em graus Celsius:`))
+    let temperatura = Number(prompt(`Insira a temperatura em graus Celsius:`));
     let F = 0;
     //Processamento
-    function temperaturaF (msg, temperatura) {
-     F = (9 * temperatura + 160) / 5
-       
+    function temperaturaF (temperatura) {
+     F = (9 * temperatura + 160) / 5;
+     alert(`A temperatura em Fahrenheit é ${F}`);
     }
-    let msg = alert(`A temperatura em Fahrenheit é ${F}`)
     //Saída
-    temperatura(msg, temperatura)
+    temperaturaF( temperatura);
 </script>

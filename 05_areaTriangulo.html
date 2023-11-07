@@ -6,11 +6,16 @@
     */
 
     //Entrada
-
+    let b = Number(prompt(`Insira a base do triangulo:`));
+    let h = Number(prompt(`Insira a altura do triangulo:`))
+    let A = 0;
 
     //Processamento
-
+    function area(b, h) {
+        A = (b * h) / 2
+        alert(`A área do triângulo é ${A}`);
+    }
 
     //Saída
-
+    area(b, h)
 </script>
