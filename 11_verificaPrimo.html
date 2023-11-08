@@ -7,13 +7,25 @@
     */
 
     //Entrada
-    let numero = Number(prompt(`Insira um número:`))
-
+    let numero = Number(prompt(`Insira um número:`));
+    let dividido = 0;
     //Processamento
-    function numeroPrimo(params) {
-        
+    function numeroPrimo(numero) {
+        for (let i = 1; i <= numero ; i++) {
+            if(numero%i == 0){
+                dividido++;
+            }           
+        }
+        if(dividido != 2){
+            alert(`esse número é primo`);
+        }
+        else{
+            alert(`esse número não é primo`);
+        }
     }
 
+    
     //Saída
-
+    numeroPrimo(numero)
+    
 </script>

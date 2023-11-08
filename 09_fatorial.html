@@ -6,11 +6,18 @@
     */
 
     //Entrada
-
+    let numero = Number(prompt(`Insira um número inteiro:`))
 
     //Processamento
-
+    function fatorial(numero) {
+        if(numero == 1){
+            return 1;
+        }
+        else{
+            return numero * fatorial(numero - 1);
+        }
+    }
 
     //Saída
-
+    alert(fatorial(numero))
 </script>

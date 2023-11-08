@@ -7,12 +7,21 @@
     *A frase (ou palavra) e a letra devem ser fornecidas pelo usuário.
     */
 
-    //Entrada
-
-
+   //Entrada
+   let palavra = prompt(`Insira uma palavra ou frase:`).trim().toLowerCase();
+    let letra = prompt(`Insira uma letra:`).toLowerCase();
     //Processamento
 
+    function vogais() {
+        let V = 0;
 
+        for (const leitor of palavra) {
+            if(leitor == letra){
+                V++;
+            }
+            return V;
+    }
+    }
     //Saída
-
+    alert(`A letra ${letra} aparece ${vogais()} vezes.`)
 </script>
